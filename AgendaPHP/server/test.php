@@ -2,21 +2,21 @@
 
 include('conector.php');
 
-  $data['nombre'] = "'".$_POST['nombre']."'";
-  $data['apellido'] = "'".$_POST['apellido']."'";
-  $data['email'] = "'".$_POST['email']."'";
-  $data['psw'] = "'".password_hash($_POST['psw'], PASSWORD_DEFAULT)."'";
-  $data['fecha_nacimiento'] = "'".$_POST['fecha_nacimiento']."'";
+$datos = array(
+'nombre' => 'Esteban',
+'apellido' => 'Ramirez',
+'email' => 'eramirez@gmail.com',
+'psw' => password_hash("123456", PASSWORD_DEFAULT),
+'fecha_nacimiento' => '1975-11-10');
+
 
   
   
 $con = new ConectorBD('localhost','root','');
   $response['conexion'] = $con->initConexion('agendaphp_db');
-  
+  echo $response;
 
   if ($response['conexion']=='OK') {
-    
-
     if($con->insertData('users', $data)){
       $response['msg']="Se ha registrado exitosamente";
     }else {

@@ -25,6 +25,14 @@
         return "OK";
       }
     }
+    //funcion para chequear datos de usuario
+    function datosUsuario($email){
+      $sql="SELECT * FROM usuarios WHERE correo='".$email."'";
+      return $this->ejecutarQuery($sql);
+    }
+
+
+
     //función para creación de nueva tabla, se indica la misma y los campos correspondientes
     function newTable($nombre_tbl, $campos){
       $sql = 'CREATE TABLE '.$nombre_tbl.' (';
@@ -134,6 +142,7 @@
       return $this->ejecutarQuery($sql);
     }
 
+    
     
 
 
