@@ -26,8 +26,8 @@
       }
     }
     //funcion para chequear datos de usuario
-    function datosUsuario($email){
-      $sql="SELECT * FROM usuarios WHERE correo='".$email."'";
+    function datosUsuario($nombre_tbl,$email){
+      $sql="SELECT * FROM '.$nombre_tbl.' WHERE email='".$email."'";
       return $this->ejecutarQuery($sql);
     }
 

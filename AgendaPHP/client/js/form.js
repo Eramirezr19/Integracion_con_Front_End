@@ -23,6 +23,8 @@ class NewUser {
     if(contrasena === repContrasena){
       this.sendForm()
       console.log("contraseña correcta")
+    }else{
+      alert("La contraseña no coincide, intente nuevamente");
     }
   }
 
