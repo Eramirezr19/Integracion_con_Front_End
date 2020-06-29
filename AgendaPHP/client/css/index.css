@@ -23,3 +23,14 @@ div.btn-container{
   display: flex;
   justify-content: center;
 }
+
+#ingreso{
+  text-align: right;
+  
+font-size: 1rem;
+}
+
+#ingreso:hover{
+  text-decoration: underline;
+
+}
