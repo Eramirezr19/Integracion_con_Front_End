@@ -1,0 +1,8 @@
+Usuario: eramirezing@gmail.com
+Contraseña: 123456
+
+Base de datos: agenda_db
+Tablas:
+usuarios.json
+eventos.json
+
