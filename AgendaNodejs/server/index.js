@@ -16,7 +16,7 @@ app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({extended: true}));
 app.use(express.static("client"));
 app.use(session({
-	secret: "123",
+	secret: "123456X",
 	resave: false,
 	saveUninitialized: false
 }));
@@ -56,7 +56,7 @@ app.post("/login",function (req, res){
 app.use("/events", events);
 
 app.listen(PORT, function (){
-	console.log("El servidor agenda GP está corriendo por el servidor : " + PORT);
+	console.log(`El servidor agenda_db está corriendo por el servidor : ${PORT}`);
 });
 
 
