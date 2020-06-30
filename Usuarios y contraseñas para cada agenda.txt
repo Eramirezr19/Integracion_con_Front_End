@@ -1,0 +1,12 @@
+AgendaPHP:
+
+Usuario: eramirezing@gmail.com
+Contraseña:123456
+
+AgendaNodeJs:
+
+Usuario: eramirezing@gmail.com
+contraseña: 123456
+
+
+
